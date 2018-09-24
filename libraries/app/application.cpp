@@ -162,8 +162,7 @@ namespace detail {
          {
             // https://bitsharestalk.org/index.php/topic,23715.0.html
             vector<string> seeds = {
-               "18.184.131.71:33114"
-            };
+                "18.185.117.250:33114"};
             for( const string& endpoint_string : seeds )
             {
                try {
