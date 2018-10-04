@@ -38,7 +38,7 @@ To build after all dependencies are installed:
     cd bitshares-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
-    cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo .
+    cmake -DGRAPHENE_EGENESIS_JSON="$(pwd)/genesis.json" -DCMAKE_BUILD_TYPE=RelWithDebInfo .
     make
 
 **NOTE:** BitShares requires an [OpenSSL](https://www.openssl.org/) version in the 1.0.x series. OpenSSL 1.1.0 and newer are NOT supported. If your system OpenSSL version is newer, then you will need to manually provide an older version of OpenSSL and specify it to CMake using `-DOPENSSL_INCLUDE_DIR`, `-DOPENSSL_SSL_LIBRARY`, and `-DOPENSSL_CRYPTO_LIBRARY`.
