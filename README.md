@@ -1,4 +1,4 @@
-BitShares Core
+Aunite Core
 ==============
 * [Getting Started](#getting-started)
 * [Support](#support)
@@ -7,8 +7,8 @@ BitShares Core
 * [FAQ](#faq)
 * [License](#license)
 
-BitShares Core is the BitShares blockchain implementation and command-line interface.
-The web wallet is [BitShares UI](https://github.com/bitshares/bitshares-ui).
+Aunite Core is the Aunite blockchain implementation and command-line interface.
+The web wallet is [Aunite UI](https://github.com/oooautoclub/autounite-js).
 
 Visit [BitShares.org](https://bitshares.org/) to learn about BitShares and join the community at [BitSharesTalk.org](https://bitsharestalk.org/).
 
@@ -35,7 +35,7 @@ We recommend building on Ubuntu 16.04 LTS, and the build dependencies may be ins
 To build after all dependencies are installed:
 
     git clone https://github.com/oooautoclub/AuniteBlockchain.git
-    cd bitshares-core
+    cd AuniteBlockchain
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
     cmake -DGRAPHENE_EGENESIS_JSON="$(pwd)/genesis.json" -DCMAKE_BUILD_TYPE=RelWithDebInfo .
